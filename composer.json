@@ -1,0 +1,13 @@
+{
+  "name": "parser/yandex-music",
+  "autoload": {
+    "psr-4": {
+      "TestParser\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.3",
+    "ext-curl": "*",
+    "ext-mysqli": "*"
+  }
+}

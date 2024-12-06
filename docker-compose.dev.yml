@@ -1,0 +1,16 @@
+services:
+  db:
+    image: mysql:8
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: test_parser
+      MYSQL_DATABASE: test_parser
+      MYSQL_USER: test_parser
+      MYSQL_PASSWORD: test_parser
+    volumes:
+      - data:/var/lib/mysql/
+
+volumes:
+  data:
